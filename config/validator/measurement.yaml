@@ -1,0 +1,10 @@
+App\Entity\Measurement:
+    properties:
+        date:
+            - NotBlank:
+                  groups: [create, edit]
+        celsius:
+            - Range:
+                  min: -40
+                  max: 40
+                  groups: [create, edit]
